@@ -1,0 +1,11 @@
+namespace :deploy do
+
+  desc 'Restart workers'
+  task :restart do
+    on roles(:all) do
+      execute :sudo, 'monit restart kochiku_worker_resque'
+    end
+  end
+
+  after :publishing, :restart
+end
