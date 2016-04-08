@@ -1,5 +1,5 @@
-kochiku_web_server_host: localhost:3000
+kochiku_web_server_host: 127.0.0.1:8080
 kochiku_web_server_protocol: http
-build_strategy: random
-redis_host: localhost
+build_strategy: build_all
+redis_host: 127.0.0.1
 redis_port: 6379
