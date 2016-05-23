@@ -3,7 +3,7 @@
 lock '3.2.1'
 
 set :application, "kochiku-worker"
-set :repo_url,  "https://github.com/square/kochiku-worker.git"
+set :repo_url,  "https://github.com/alexrothenberg/kochiku-worker.git"
 set :user, "kochiku"
 
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
